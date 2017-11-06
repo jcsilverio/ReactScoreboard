@@ -14,7 +14,6 @@ var PLAYERS = [
     score: 42,
     id: 3,
   },
-
 ];
 
 var nextId = 4;
@@ -37,7 +36,7 @@ var Stopwatch = React.createClass({
   },
 
   onTick: function () {
-    if(this.state.running){
+    if( this.state.running ){
       var now = Date.now();
       this.setState({
       previousTime: now,
